@@ -21,7 +21,8 @@ const SuperHeroTable = (props) => {
                             props.heroes.map((key) => {
                                 return (
                                     <tr key={key.superheroId}>
-                                        <td className="text-muted">{key.name}</td>
+                                        <td className="text-muted">{key.superheroId}</td>
+                                        <td>{key.name}</td>
                                         <td>{key.primaryAbility}</td>
                                         <td>{key.secondaryAbility}</td>
                                     </tr>
